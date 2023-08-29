@@ -64,7 +64,9 @@ let selector = d3.select("#selDataset");
     console.log(Demographic_Info[0])
     let displaydata = d3.select("#sample-metadata");
     displaydata.html("")
-    for (item in Demographic_Info[0]){displaydata.append("h6").text(`${item.toLowerCase()}: ${Demographic_Info[item]}`);
+    for (item in Demographic_Info[0]){
+      displaydata.append("h6").text(`${item.toLowerCase()}: ${Demographic_Info[0][item]}`)
+      
     }});
   };
 
